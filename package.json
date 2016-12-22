@@ -1,0 +1,55 @@
+{
+  "name": "react-tap",
+  "version": "1.0.0",
+  "description": "react tap组件，支持onTap事件以及点击态",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shixy/react-tap.git"
+  },
+  "author": "shixy<walker.shixy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shixy/react-tap/issues"
+  },
+  "scripts": {
+    "start": "webpack -wd",
+    "dev": "webpack -p"
+  },
+  "homepage": "http://shixy.github.io/react-tap/",
+  "keywords": [
+    "react",
+    "tap",
+    "react-tap",
+    "react-component"
+  ],
+  "devDependencies": {
+     "babel-core": "^6.13.2",
+     "babel-loader": "^6.2.4",
+     "babel-polyfill": "^6.13.0",
+     "babel-preset-es2015": "^6.13.2",
+     "babel-preset-react": "^6.11.1",
+     "babel-preset-react-hmre": "^1.1.1",
+     "css-loader": "^0.23.1",
+     "es6-promise": "^4.0.5",
+     "extract-text-webpack-plugin": "^1.0.1",
+     "file-loader": "^0.9.0",
+     "glob": "^7.1.1",
+     "html-loader": "^0.4.4",
+     "html-webpack-plugin": "^2.24.0",
+     "humps": "^2.0.0",
+     "isomorphic-fetch": "^2.2.1",
+     "json-loader": "^0.5.4",
+     "less": "^2.7.1",
+     "less-loader": "^2.2.3",
+     "react": "^15.3.0",
+     "react-dom": "^15.3.0",
+     "reflux" : "^5.0.4",
+     "classnames": "2.2.5",
+     "style-loader": "^0.13.1",
+     "url-loader": "^0.5.7",
+     "webpack": "^1.13.1",
+     "webpack-dev-middleware": "^1.6.1",
+     "webpack-hot-middleware": "^2.12.2"
+  }
+}
