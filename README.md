@@ -1,12 +1,11 @@
-# react-tap
+# react-tap-event
 react tap组件，支持onTap事件以及点击态
-
 
 
 # install
 
 ```shell
-    npm install react-tap
+    npm install react-tap-event
 ```
 
 # usage
@@ -14,7 +13,7 @@ react tap组件，支持onTap事件以及点击态
 ```js
 import React, { PropTypes } from 'react'
 require('./TapDemo.less');
-require('react-tap');
+require('react-tap-event');
 
 class TapDemo extends React.Component {
 onTap(index) {
