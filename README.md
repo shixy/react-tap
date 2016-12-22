@@ -3,13 +3,13 @@ react tap组件，支持onTap事件以及点击态
 
 
 
-## install
+# install
 
 ```shell
     npm install react-tap
 ```
 
-## usage
+# usage
 
 ```js
 import React, { PropTypes } from 'react'
@@ -38,7 +38,7 @@ export default TapDemo;
 
 ```
 
-## docs
+# docs
 **onTap**
 
 > 与onClick事件一样的使用方式，只在基础的html标签上生效
