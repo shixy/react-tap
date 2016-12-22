@@ -1,0 +1,40 @@
+.tap-active {
+    background-color: rgba(0,0,0,.1) !important;
+}
+.tap-ripple {
+    outline:none;
+    background:rgba(0,0,0,.2);
+    /*执行动画*/
+    -webkit-animation:showBtn 0.2s 1;
+    animation:showBtn 0.2s 1;
+    /*停止在最后一帧*/
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+// background:radial-gradient(Circle,#1E7AA5 28%, #2287B7 30%, #2287B7 48%,#208FC1 60%);
+@-webkit-keyframes showBtn{
+    10%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.3) 28%, rgba(0,0,0,.2) 30%, rgba(0,0,0,.15) 48%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 28%, rgba(0,0,0,.2) 30%, rgba(0,0,0,.15) 48%,rgba(0,0,0,.1) 60%);
+    }
+    20%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.5) 32%, rgba(0,0,0,.2) 34%, rgba(0,0,0,.15) 52%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 32%, rgba(0,0,0,.2) 34%, rgba(0,0,0,.15) 52%,rgba(0,0,0,.1) 60%);
+    }
+    40%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.5) 34%, rgba(0,0,0,.2) 36%, rgba(0,0,0,.15) 54%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 34%, rgba(0,0,0,.2) 36%, rgba(0,0,0,.15) 54%,rgba(0,0,0,.1) 60%);
+    }
+    60%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.5) 36%, rgba(0,0,0,.2) 38%, rgba(0,0,0,.15) 56%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 36%, rgba(0,0,0,.2) 38%, rgba(0,0,0,.15) 56%,rgba(0,0,0,.1) 60%);
+    }
+    80%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.3) 38%, rgba(0,0,0,.2) 40%, rgba(0,0,0,.15) 58%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 38%, rgba(0,0,0,.2) 40%, rgba(0,0,0,.15) 58%,rgba(0,0,0,.1) 60%);
+    }
+    100%{
+        background:-webkit-radial-gradient(Circle,rgba(0,0,0,.3) 40%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.15) 60%,rgba(0,0,0,.1) 60%);
+        background:radial-gradient(Circle,rgba(0,0,0,.3) 40%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.15) 60%,rgba(0,0,0,.1) 60%);
+    }
+}
