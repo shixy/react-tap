@@ -2,6 +2,7 @@
 react tap组件，支持onTap事件以及点击态
 
 
+
 ## install
 
 ```shell
@@ -39,9 +40,11 @@ export default TapDemo;
 
 ## docs
 **onTap**
+
 > 与onClick事件一样的使用方式，只在基础的html标签上生效
 
 **tapActive**
+
 >  true: 开启默认点击态   background-color:rgba(0,0,0,.1)
 
 > String: 自定义className，个性化点击态
