@@ -1,6 +1,8 @@
 # react-tap-event
 react tap组件，支持onTap事件以及点击态,同时增加了ios惯性滚动点停的功能。
 
+![](./tap.gif)
+
 
 # install
 
