@@ -170,10 +170,6 @@ var onTouchEnd = function(callback, onTap, type, tapActive, event) {
                         onTap(event, event.currentTarget);
                     }
                 }
-
-                if (!event.defaultPrevented && handleType[type]) {
-                    handleType[type](event);
-                }
             }
         }
     }
