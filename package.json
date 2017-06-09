@@ -1,6 +1,6 @@
 {
   "name": "react-tap-event",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "react tap组件，支持onTap事件以及点击态",
   "main": "index.js",
   "repository": {
@@ -44,8 +44,6 @@
      "less-loader": "^2.2.3",
      "react": "^15.3.0",
      "react-dom": "^15.3.0",
-     "reflux" : "^5.0.4",
-     "classnames": "2.2.5",
      "style-loader": "^0.13.1",
      "url-loader": "^0.5.7",
      "webpack": "^1.13.1",

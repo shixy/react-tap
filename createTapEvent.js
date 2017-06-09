@@ -88,11 +88,11 @@ var wrapTap = function(onTap, tapActive) {
 
 var onTouchStart = function(callback, event) {
     // 修复iOS下滚动点停跳转的问题
-    if (!touchEvents.moved) {
-        setTimeout(function() {
-            touchEvents.hasStart = true;
-        });
-    }
+    // 增加标志位hasStart 只有真正触发了start 才能触发回调
+
+    setTimeout(function() {
+        touchEvents.hasStart = true;
+    });
 
     // 是否有效tap
     touchEvents.invalid = false;
@@ -162,9 +162,13 @@ var onTouchEnd = function(callback, onTap, type, tapActive, event) {
                     }
 
                     // 修复iOS滚动点停问题
-                    if(isIOS && !touchEvents.hasStart) {
-
-                    }else {
+                    if (isIOS) {
+                        if (touchEvents.hasStart) {
+                            copyTouchKeys(touchEvents.lastPos, event);
+                            fakeClickEvent(event);
+                            onTap(event, event.currentTarget);
+                        }
+                    } else {
                         storeTouchKeys(touchEvents.lastPos, event);
                         fakeTapEvent(event);
                         onTap(event, event.currentTarget);
